@@ -357,9 +357,9 @@
 //=========================================					ФУНКЦИИ				===========================================================================================================
 
 
-var pickRandomWord = function (words) {
-	return words[Math.floor(Math.random() * words.length)];
-  };
+// var pickRandomWord = function (words) {
+// 	return words[Math.floor(Math.random() * words.length)];
+//   };
 
 //   var randomWords = ["Планета", "Червяк", "Цветок", "Компьютер"];
 
@@ -382,12 +382,82 @@ var pickRandomWord = function (words) {
 // randomAdjective + " " + randomWord + "!!!";
 // randomInsult;
 
-var randomBodyParts = ["глаз", "нос", "череп"];
-var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
-var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+// var randomBodyParts = ["глаз", "нос", "череп"];
+// var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+// var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
 
-// Соединяем случайные строки в предложение:
-var randomString = "У тебя " + pickRandomWord(randomBodyParts) + 
-" словно " + pickRandomWord(randomAdjectives) + 
-" " + pickRandomWord(randomWords) + "!!!";
-randomString;
+// // Соединяем случайные строки в предложение:
+// var randomString = "У тебя " + pickRandomWord(randomBodyParts) + 
+// " словно " + pickRandomWord(randomAdjectives) + 
+// " " + pickRandomWord(randomWords) + "!!!";
+// randomString;
+
+
+// ГЕНЕРАТОР ДРАЗНИЛОК
+
+// var pickRandomWord = function (words) {
+// 	return words[Math.floor(Math.random() * words.length)];
+//   };
+
+  
+
+//   var generateRandomInsult = function () {
+// 	var randomBodyParts = ["глаз", "нос", "череп"];
+// 	var randomAdjectives = ["вонючая", "унылая", "дурацкая"];
+// 	var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+// 	 // Соединяем случайные строки в предложение:
+// 	 var randomString = "У тебя " + pickRandomWord(randomBodyParts) + " словно " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + "!!!";
+// 	 return randomString;
+// 	 };
+
+// 	 var fifthLetter = function (name) {
+// 		 if (name.length < 5) {
+// 		 return;
+// 		 }
+// 		 return "Пятая буква вашего имени: " + name[4] + ".";
+// 		};
+
+// 		var medalForScore = function (score) {
+// 			if (score < 3) {
+// 		   return "Бронзовая";
+// 			}
+// 		   if (score < 7) {
+// 			return "Серебряная";
+// 			}
+// 		   return "Золотая";
+// 		  };
+
+
+//           УПРАЖНЕНИЯ                   
+
+
+// let add = function (number1,number2){
+// 	return resultAnswer = number1 + number2;
+// }
+// 	let multiply = function (number1,number2){
+// 		return resultMultiply = number1 * number2;
+// 	}
+// 	multiply(36325,9824);
+
+// 	result = add(multiply(36325, 9824), 777);
+// 	console.log(result);
+
+
+
+
+	let areArraysSame = function ([array1],[array2]){
+		for (let i = 0; i < array.length; i++) {
+			
+			
+			if ([array1][i] !== [array2][i]){
+				return false;
+			} else if (array1.length === array2.length){
+				return false;
+			} else {
+				return true;
+			}
+						
+		}
+	}
+
+	areArraysSame([1, 2, 3], [4, 5, 6]);
